@@ -1,2 +1,2 @@
 # Playwright-Training
-Self learning Playwright with some small projects
+Self learning Playwright with some projects
