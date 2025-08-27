@@ -2,7 +2,6 @@ package PlaywrightSessions;
 
 import com.microsoft.playwright.*;
 import com.microsoft.playwright.options.AriaRole;
-
 import java.nio.file.Paths;
 
 public class TracerInspection {
