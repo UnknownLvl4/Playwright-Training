@@ -11,7 +11,7 @@ public class Auth {
         Page page = brContext.newPage();
         page.navigate("http://www.automationpractice.pl/");
         page.click("a:text('Sign in')");
-        page.fill("#email", "duy.hn.63cntt@ntu.edu.vn");
+        page.fill("#email", "xyz112@gmail.com");
         page.fill("#passwd", "zzz579314");
         page.click("#SubmitLogin");
         brContext.storageState(new BrowserContext.StorageStateOptions().setPath(Paths.get("applogin.json")));
