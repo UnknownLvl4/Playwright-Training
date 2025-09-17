@@ -65,7 +65,7 @@ public class CreateUserTestWithJsonStringTest {
         JsonNode postJsonResponse = objectMapper.readTree(apiPostResponse.body());
         System.out.println(postJsonResponse.toPrettyString());
 
-        //Capture id frome the post json response:
+        //Capture id from the post json response:
         String userId = postJsonResponse.get("id").asText();
         System.out.println("user id : " + userId);
 
