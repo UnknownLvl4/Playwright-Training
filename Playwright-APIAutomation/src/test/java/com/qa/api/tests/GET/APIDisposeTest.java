@@ -1,4 +1,4 @@
-package com.qa.api.tests;
+package com.qa.api.tests.GET;
 
 import com.microsoft.playwright.*;
 import org.testng.Assert;
@@ -22,7 +22,7 @@ public class APIDisposeTest {
     public void disposeResponseTest() {
 
         //Request-1:
-        APIResponse apiResponse = requestContext.get("https://gorest.co.in/public/v2/users");
+        APIResponse apiResponse = requestContext.get("https://gorest.co.in/public/v2/users/");
         int statusCode = apiResponse.status();
         System.out.println("response status code: " + statusCode);
         Assert.assertEquals(statusCode, 200);

@@ -1,4 +1,4 @@
-package com.qa.api.tests;
+package com.qa.api.tests.POST;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -49,7 +49,7 @@ public class CreateUserPostCallTest {
         data.put("status", "active");
 
         //POST Call: create a user
-        APIResponse apiPostResponse = requestContext.post("https://gorest.co.in/public/v2/users", RequestOptions.create()
+        APIResponse apiPostResponse = requestContext.post("https://gorest.co.in/public/v2/users/", RequestOptions.create()
                 .setHeader("content-type", "application/json")
                 .setHeader("Authorization", "Bearer 3644af0942c7e1088d725459dd7c4b3afa90decde4e2bb9a867127ce1fb8c2d7")
                 .setData(data));

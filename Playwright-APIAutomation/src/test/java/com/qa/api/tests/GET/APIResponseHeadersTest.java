@@ -1,4 +1,4 @@
-package com.qa.api.tests;
+package com.qa.api.tests.GET;
 
 import com.microsoft.playwright.APIRequest;
 import com.microsoft.playwright.APIRequestContext;
@@ -32,7 +32,7 @@ public class APIResponseHeadersTest {
 
     @Test
     public void getHeadersTest() {
-        APIResponse apiResponse = requestContext.get("https://gorest.co.in/public/v2/users");
+        APIResponse apiResponse = requestContext.get("https://gorest.co.in/public/v2/users/");
         int statusCode = apiResponse.status();
         System.out.println("response status code: " + statusCode);
         Assert.assertEquals(statusCode, 200);

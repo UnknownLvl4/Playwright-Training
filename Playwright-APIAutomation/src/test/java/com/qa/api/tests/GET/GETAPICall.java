@@ -1,4 +1,4 @@
-package com.qa.api.tests;
+package com.qa.api.tests.GET;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -29,7 +29,7 @@ public class GETAPICall {
 
     @Test
     public void getSpecificUserApiTest() throws IOException {
-        APIResponse apiResponse = requestContext.get("https://gorest.co.in/public/v2/users", RequestOptions.create()
+        APIResponse apiResponse = requestContext.get("https://gorest.co.in/public/v2/users/", RequestOptions.create()
                 .setQueryParam("gender", "male")
                 .setQueryParam("status", "active"));
 
@@ -53,7 +53,7 @@ public class GETAPICall {
 
     @Test
     public void getUsersApiTest() throws IOException {
-        APIResponse apiResponse = requestContext.get("https://gorest.co.in/public/v2/users");
+        APIResponse apiResponse = requestContext.get("https://gorest.co.in/public/v2/users/");
         int statusCode = apiResponse.status();
         System.out.println("response status code: " + statusCode);
         Assert.assertEquals(statusCode, 200);
