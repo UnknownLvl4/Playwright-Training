@@ -22,7 +22,7 @@ public class FileUploadHandle {
 //        Thread.sleep(4000);
 //        page.setInputFiles("input#filesToUpload", new Path[0]);
 
-
+        //multiple files:
 //        page.setInputFiles("input#filesToUpload", new Path[]{
 //                Paths.get("applogin.json"),
 //                Paths.get("trace.zip"),
